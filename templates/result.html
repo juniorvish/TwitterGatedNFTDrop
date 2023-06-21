@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter-Gated NFT Drop</title>
+    <link rel="stylesheet" href="/static/css/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-4">Twitter-Gated NFT Drop</h1>
+        <div id="nftDropContainer" class="hidden">
+            <h2 class="text-2xl font-semibold mb-2">NFT Drop Details</h2>
+            <div id="nftDropDetails" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <!-- NFT drop details will be populated here -->
+            </div>
+        </div>
+        <div id="loginButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Login with Twitter
+        </div>
+        <div id="tweetActionButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hidden">
+            Perform Twitter Action
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
