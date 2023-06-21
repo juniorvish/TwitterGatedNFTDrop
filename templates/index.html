@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter-Gated NFT Drop</title>
+    <link rel="stylesheet" href="/static/css/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-4">Twitter-Gated NFT Drop</h1>
+        <p class="mb-4">Authenticate with your Twitter account and perform the required actions to unlock the NFT drop.</p>
+        <button id="loginButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="authenticateUser()">Login with Twitter</button>
+        <div id="tweetActionButton" class="hidden mt-4">
+            <p class="mb-2">Perform the required action:</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="verifyUserAction()">Perform Action</button>
+        </div>
+        <div id="nftDropContainer" class="hidden mt-8">
+            <h2 class="text-2xl font-bold mb-4">NFT Drop Unlocked</h2>
+            <div id="nftDropDetails"></div>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
